@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="tree">🎄</div>
+        <h1>Merry Christmas!</h1>
+        <p>May your days be merry and bright.</p>
+        <button onclick="revealMessage()">GIFT FROM SANTA</button>
+        <div id="message">🎁 "Wishing you a season full of light and laughter!"</div>
+    </div>
+    <div id="message" style="display: none;">🎁 "Wishing you a season full of light and laughter!"</div>
+
+    <div id="tree-container" style="display: none;">
+        <div id="star-field"></div>
+        <div class="content-wrapper">
+            <div class="neon-tree-box">
+                <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+                    <path class="draw-line ice-blue-path"
+                        d="M100,40 C110,60 140,80 120,90 C150,110 170,140 130,150 C160,170 180,210 100,200 C20,210 40,170 70,150 C30,140 50,110 80,90 C60,80 90,60 100,40" />
+                    <path class="draw-line neon-green-path"
+                        d="M100,40 C110,60 140,80 120,90 C150,110 170,140 130,150 C160,170 180,210 100,200 C20,210 40,170 70,150 C30,140 50,110 80,90 C60,80 90,60 100,40" />
+                    <path class="draw-line ice-blue-path" d="M40,225 Q100,245 160,225" style="animation-delay: 2.5s;" />
+                    <path class="draw-line neon-green-path" d="M55,220 Q100,235 145,220" style="animation-delay: 3s;" />
+                    <path class="star"
+                        d="M100,10 L106,24 L120,24 L109,33 L113,47 L100,39 L87,47 L91,33 L80,24 L94,24 Z" />
+                </svg>
+            </div>
+
+            <div id="special-text">
+
+                <p>
+                <h1>✨ A Magical Christmas Eve ✨</h1>
+                <h2>May all your wishes comes true and bring a new light of <br>
+                wonder, peace, and love!</h2>
+                <h3>Gift is given by everyone... but on this eve i can give you <br>
+                    Respect 👋!<br>
+                    Loyalty ✨!<br>
+                    Time ⏳! <br>
+                    Trust 🫂!<br>
+                    Priority 🫵!<br>
+                </h3>
+                </p>
+                <button class="close-btn" onclick="location.reload()">BACK</button>
+                <button class="next-btn" onclick="showTypewriterPage()">Wishlist for Santa</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="typewriter-page" style="display: none;">
+        <div class="card">
+            <h2>Your Christmas Note to Santa</h2>
+            <textarea id="user-note" placeholder="Write everything which is in your heart... may all of them come true... "></textarea>
+            <br>
+            <button class="next-btn" onclick="showSantaPage()">Reveal</button>
+        </div>
+    </div>
+
+<div id="santa-page" style="display: none;">
+    <div class="sky-background">
+        <div class="moon"></div>
+       <div id="santa-container" class="flight-direction">
+    <div id="magic-trail"></div>
+    <div class="sleigh-wrap">
+        <svg class="neon-santa-premium" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="full-sleigh-team">
+                <g class="reindeer-team" transform="translate(450, 80)">
+                    <g transform="translate(120, 0)" class="reindeer">
+                        <path d="M0,20 Q10,25 25,20 Q35,15 30,5 L35,0 M28,8 L32,8" fill="none" stroke="#39ff14" stroke-width="2.5"/>
+                        <path d="M15,10 Q15,0 10,-5 M20,10 Q25,0 30,-5" fill="none" stroke="#39ff14" stroke-width="1.5"/> </g>
+                    <g transform="translate(60, -5)" class="reindeer">
+                        <path d="M0,20 Q10,25 25,20 Q35,15 30,5 L35,0" fill="none" stroke="#39ff14" stroke-width="2.5"/>
+                        <path d="M15,10 Q15,0 10,-5 M20,10 Q25,0 30,-5" fill="none" stroke="#39ff14" stroke-width="1.5"/>
+                    </g>
+                    <g transform="translate(0, 5)" class="reindeer">
+                        <path d="M0,20 Q10,25 25,20 Q35,15 30,5 L35,0" fill="none" stroke="#39ff14" stroke-width="2.5"/>
+                        <path d="M15,10 Q15,0 10,-5 M20,10 Q25,0 30,-5" fill="none" stroke="#39ff14" stroke-width="1.5"/>
+                    </g>
+                </g>
+
+                <path d="M220,110 Q350,150 460,105" stroke="#fff5ab" stroke-width="3" fill="none" class="rein-glow" />
+
+                <g transform="translate(50, 40)">
+                    <path d="M20,100 Q10,100 5,80 Q0,40 40,40 L140,40 Q170,40 170,70 Q170,100 130,100 Z" fill="none" stroke="#ff00ff" stroke-width="4" />
+                    <path d="M10,115 L160,115 Q180,115 180,95" fill="none" stroke="#00f2ff" stroke-width="4" stroke-linecap="round" />
+                    
+                    <g transform="translate(60, 15)">
+                        <path d="M0,45 Q0,20 25,20 Q50,20 50,45" fill="none" stroke="#fff" stroke-width="3" /> <circle cx="25" cy="15" r="12" fill="none" stroke="#fff" stroke-width="3" /> <path d="M10,15 Q25,35 40,15" fill="none" stroke="#fff" stroke-width="2" /> <path d="M12,8 Q25,-15 45,5 L55,15" fill="none" stroke="#ff3131" stroke-width="3" />
+                        <circle cx="58" cy="18" r="4" fill="#fff" /> </g>
+                    
+                    <rect x="25" y="25" width="20" height="15" fill="none" stroke="#fbff00" stroke-width="2" />
+                    <rect x="10" y="30" width="15" height="10" fill="none" stroke="#39ff14" stroke-width="2" />
+                </g>
+            </g>
+        </svg>
+        <div class="speech-bubble">Wish Granted!✨ Enjoy the upcoming year</div>
+    </div>
+</div>
+        <div class="final-message">
+            <h1 id="display-user-text"></h1>
+            <button class="next-btn" onclick="location.reload()">Send another</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
